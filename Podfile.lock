@@ -1,0 +1,79 @@
+PODS:
+  - ASIHTTPRequest (1.8.1.1):
+    - ASIHTTPRequest/ASIWebPageRequest
+    - ASIHTTPRequest/Basic
+    - ASIHTTPRequest/CloudFiles
+    - ASIHTTPRequest/S3
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.1.1)
+  - ASIHTTPRequest/Basic (1.8.1.1):
+    - Reachability
+  - ASIHTTPRequest/CloudFiles (1.8.1.1)
+  - ASIHTTPRequest/S3 (1.8.1.1)
+  - FMDB (2.0.2)
+  - IXPickerOverlayView (1.0)
+  - JSONAPI (1.1):
+    - JSONKit
+  - JSONKit (1.5pre.1)
+  - MYEntry (1.0):
+    - MYFramework
+  - MYEntry+JSON (1.0):
+    - ASIHTTPRequest
+    - JSONAPI
+    - MYEntry
+    - UIDevice
+  - MYEntry+Sqlite (1.0):
+    - FMDB (>= 2.0.2)
+    - MYEntry
+  - MYFramework (1.1):
+    - IXPickerOverlayView
+    - NSDate
+    - NSString
+    - NSUserDefaults+AppVersion
+    - UIView
+    - VersionString
+  - NSDate (0.0.3)
+  - NSString (0.1)
+  - NSUserDefaults+AppVersion (0.0.1)
+  - Reachability (3.1.0)
+  - UIDevice (0.0.1):
+    - NSString (~> 0.1)
+  - UIView (0.0.1)
+  - VersionString (0.1)
+
+DEPENDENCIES:
+  - MYEntry (from `../MYEntry`)
+  - MYEntry+JSON
+  - MYEntry+JSON (from `../MYEntry+JSON`)
+  - MYEntry+Sqlite
+  - MYEntry+Sqlite (from `../MYEntry+Sqlite`)
+  - MYFramework (from `../MYFramework`)
+
+EXTERNAL SOURCES:
+  MYEntry:
+    :local: ../MYEntry
+  MYEntry+JSON:
+    :local: ../MYEntry+JSON
+  MYEntry+Sqlite:
+    :local: ../MYEntry+Sqlite
+  MYFramework:
+    :local: ../MYFramework
+
+SPEC CHECKSUMS:
+  ASIHTTPRequest: acb0e30edd70ae3f1f25a69aa19f9e3985140f0c
+  FMDB: 2561d07e4841fd6c3889e932ee54e8963c9db370
+  IXPickerOverlayView: d50d7376fa4a93b976ad159bd877136946858123
+  JSONAPI: 0797b692f809f6f1ed02356a94e9a04a146546f4
+  JSONKit: 04be5665e120d63383f533fe390aa871fcda2854
+  MYEntry: a99cec0b4008ffb43c42c4f938a4d6e0942d5390
+  MYEntry+JSON: 8d06dddb489a887ab261239abff647b0a43f1ca5
+  MYEntry+Sqlite: 51d7ee91c848b930193d62cffdb77366ab24700d
+  MYFramework: 1d556a48462ecb5dafb903d05ad2da1801f873bd
+  NSDate: dd240230f76d67e87651980e7510e855ad392b09
+  NSString: 66d66fe184a3cc8acb377d88929afe4c222c2b6e
+  NSUserDefaults+AppVersion: 1f7bfc3e942edf48e02b79dcf51f4c07f0a42f70
+  Reachability: ba94ecd4eaa037be3d0588b38956672588530c5b
+  UIDevice: e18ca4789d97a8d2e58894ab6baf7d18898b81fa
+  UIView: 25f5581821d52431c4238d637cc3342fd51a69ff
+  VersionString: 723287538db58caaa7b67c439d02bc6e6ed94422
+
+COCOAPODS: 0.17.2

@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB0FBCD9171E4CA700F81F3D /* MYEntrySqlAccessWithLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0FBCCF171E4CA700F81F3D /* MYEntrySqlAccessWithLog.m */; };
+		AB0FBCDA171E4CA700F81F3D /* MYEntry+Sync.broadcast in Resources */ = {isa = PBXBuildFile; fileRef = AB0FBCD0171E4CA700F81F3D /* MYEntry+Sync.broadcast */; };
+		AB0FBCDB171E4CA700F81F3D /* MYEntryInDbLog.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0FBCD3171E4CA700F81F3D /* MYEntryInDbLog.m */; };
+		AB0FBCDC171E4CA700F81F3D /* MYEntryWithSync.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0FBCD5171E4CA700F81F3D /* MYEntryWithSync.m */; };
+		AB0FBCDD171E4CA700F81F3D /* MYEntrySyncUserDataBaseObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0FBCD8171E4CA700F81F3D /* MYEntrySyncUserDataBaseObserver.m */; };
+		AB0FBCE0171E4F0B00F81F3D /* MYEntry+Sync.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AB0FBCDE171E4F0B00F81F3D /* MYEntry+Sync.podspec */; };
+		AB0FBCE1171E4F0B00F81F3D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = AB0FBCDF171E4F0B00F81F3D /* Podfile */; };
+		AB87F1CA171E480F0054FC8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB87F1C9171E480F0054FC8C /* UIKit.framework */; };
+		AB87F1CC171E480F0054FC8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB87F1CB171E480F0054FC8C /* Foundation.framework */; };
+		AB87F1CE171E480F0054FC8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB87F1CD171E480F0054FC8C /* CoreGraphics.framework */; };
+		AB87F1D4171E480F0054FC8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB87F1D2171E480F0054FC8C /* InfoPlist.strings */; };
+		AB87F1D6171E480F0054FC8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB87F1D5171E480F0054FC8C /* main.m */; };
+		AB87F1DA171E480F0054FC8C /* MYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB87F1D9171E480F0054FC8C /* MYAppDelegate.m */; };
+		AB87F1DC171E480F0054FC8C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AB87F1DB171E480F0054FC8C /* Default.png */; };
+		AB87F1DE171E480F0054FC8C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB87F1DD171E480F0054FC8C /* Default@2x.png */; };
+		AB87F1E0171E480F0054FC8C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB87F1DF171E480F0054FC8C /* Default-568h@2x.png */; };
+		BE4B4052D303417B94C72C40 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BCF48215C9F4ECEB91CA30A /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5BCF48215C9F4ECEB91CA30A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0FBCCE171E4CA700F81F3D /* MYEntrySqlAccessWithLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYEntrySqlAccessWithLog.h; sourceTree = "<group>"; };
+		AB0FBCCF171E4CA700F81F3D /* MYEntrySqlAccessWithLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYEntrySqlAccessWithLog.m; sourceTree = "<group>"; };
+		AB0FBCD0171E4CA700F81F3D /* MYEntry+Sync.broadcast */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MYEntry+Sync.broadcast"; sourceTree = "<group>"; };
+		AB0FBCD2171E4CA700F81F3D /* MYEntryInDbLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYEntryInDbLog.h; sourceTree = "<group>"; };
+		AB0FBCD3171E4CA700F81F3D /* MYEntryInDbLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYEntryInDbLog.m; sourceTree = "<group>"; };
+		AB0FBCD4171E4CA700F81F3D /* MYEntryWithSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYEntryWithSync.h; sourceTree = "<group>"; };
+		AB0FBCD5171E4CA700F81F3D /* MYEntryWithSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYEntryWithSync.m; sourceTree = "<group>"; };
+		AB0FBCD7171E4CA700F81F3D /* MYEntrySyncUserDataBaseObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYEntrySyncUserDataBaseObserver.h; sourceTree = "<group>"; };
+		AB0FBCD8171E4CA700F81F3D /* MYEntrySyncUserDataBaseObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYEntrySyncUserDataBaseObserver.m; sourceTree = "<group>"; };
+		AB0FBCDE171E4F0B00F81F3D /* MYEntry+Sync.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; name = "MYEntry+Sync.podspec"; path = "../MYEntry+Sync.podspec"; sourceTree = "<group>"; };
+		AB0FBCDF171E4F0B00F81F3D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		AB87F1C6171E480F0054FC8C /* MYEntry+Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MYEntry+Sync.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB87F1C9171E480F0054FC8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB87F1CB171E480F0054FC8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB87F1CD171E480F0054FC8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AB87F1D1171E480F0054FC8C /* MYEntry+Sync-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MYEntry+Sync-Info.plist"; sourceTree = "<group>"; };
+		AB87F1D3171E480F0054FC8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB87F1D5171E480F0054FC8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB87F1D7171E480F0054FC8C /* MYEntry+Sync-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MYEntry+Sync-Prefix.pch"; sourceTree = "<group>"; };
+		AB87F1D8171E480F0054FC8C /* MYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYAppDelegate.h; sourceTree = "<group>"; };
+		AB87F1D9171E480F0054FC8C /* MYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYAppDelegate.m; sourceTree = "<group>"; };
+		AB87F1DB171E480F0054FC8C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AB87F1DD171E480F0054FC8C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AB87F1DF171E480F0054FC8C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E3E52631DA7344A99BAD3374 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB87F1C3171E480F0054FC8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB87F1CA171E480F0054FC8C /* UIKit.framework in Frameworks */,
+				AB87F1CC171E480F0054FC8C /* Foundation.framework in Frameworks */,
+				AB87F1CE171E480F0054FC8C /* CoreGraphics.framework in Frameworks */,
+				BE4B4052D303417B94C72C40 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB0FBCCC171E4CA700F81F3D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AB0FBCCD171E4CA700F81F3D /* MYDataAccess */,
+				AB0FBCD0171E4CA700F81F3D /* MYEntry+Sync.broadcast */,
+				AB0FBCD1171E4CA700F81F3D /* MYModel */,
+				AB0FBCD6171E4CA700F81F3D /* Observer */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AB0FBCCD171E4CA700F81F3D /* MYDataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				AB0FBCCE171E4CA700F81F3D /* MYEntrySqlAccessWithLog.h */,
+				AB0FBCCF171E4CA700F81F3D /* MYEntrySqlAccessWithLog.m */,
+			);
+			path = MYDataAccess;
+			sourceTree = "<group>";
+		};
+		AB0FBCD1171E4CA700F81F3D /* MYModel */ = {
+			isa = PBXGroup;
+			children = (
+				AB0FBCD2171E4CA700F81F3D /* MYEntryInDbLog.h */,
+				AB0FBCD3171E4CA700F81F3D /* MYEntryInDbLog.m */,
+				AB0FBCD4171E4CA700F81F3D /* MYEntryWithSync.h */,
+				AB0FBCD5171E4CA700F81F3D /* MYEntryWithSync.m */,
+			);
+			path = MYModel;
+			sourceTree = "<group>";
+		};
+		AB0FBCD6171E4CA700F81F3D /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				AB0FBCD7171E4CA700F81F3D /* MYEntrySyncUserDataBaseObserver.h */,
+				AB0FBCD8171E4CA700F81F3D /* MYEntrySyncUserDataBaseObserver.m */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		AB87F1BD171E480F0054FC8C = {
+			isa = PBXGroup;
+			children = (
+				AB0FBCDE171E4F0B00F81F3D /* MYEntry+Sync.podspec */,
+				AB0FBCDF171E4F0B00F81F3D /* Podfile */,
+				AB87F1CF171E480F0054FC8C /* MYEntry+Sync */,
+				AB87F1C8171E480F0054FC8C /* Frameworks */,
+				AB87F1C7171E480F0054FC8C /* Products */,
+				E3E52631DA7344A99BAD3374 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		AB87F1C7171E480F0054FC8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB87F1C6171E480F0054FC8C /* MYEntry+Sync.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB87F1C8171E480F0054FC8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB87F1C9171E480F0054FC8C /* UIKit.framework */,
+				AB87F1CB171E480F0054FC8C /* Foundation.framework */,
+				AB87F1CD171E480F0054FC8C /* CoreGraphics.framework */,
+				5BCF48215C9F4ECEB91CA30A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB87F1CF171E480F0054FC8C /* MYEntry+Sync */ = {
+			isa = PBXGroup;
+			children = (
+				AB0FBCCC171E4CA700F81F3D /* Shared */,
+				AB87F1D8171E480F0054FC8C /* MYAppDelegate.h */,
+				AB87F1D9171E480F0054FC8C /* MYAppDelegate.m */,
+				AB87F1D0171E480F0054FC8C /* Supporting Files */,
+			);
+			path = "MYEntry+Sync";
+			sourceTree = "<group>";
+		};
+		AB87F1D0171E480F0054FC8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB87F1D1171E480F0054FC8C /* MYEntry+Sync-Info.plist */,
+				AB87F1D2171E480F0054FC8C /* InfoPlist.strings */,
+				AB87F1D5171E480F0054FC8C /* main.m */,
+				AB87F1D7171E480F0054FC8C /* MYEntry+Sync-Prefix.pch */,
+				AB87F1DB171E480F0054FC8C /* Default.png */,
+				AB87F1DD171E480F0054FC8C /* Default@2x.png */,
+				AB87F1DF171E480F0054FC8C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB87F1C5171E480F0054FC8C /* MYEntry+Sync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB87F1E3171E480F0054FC8C /* Build configuration list for PBXNativeTarget "MYEntry+Sync" */;
+			buildPhases = (
+				AB87F1C2171E480F0054FC8C /* Sources */,
+				AB87F1C3171E480F0054FC8C /* Frameworks */,
+				AB87F1C4171E480F0054FC8C /* Resources */,
+				380C94302E00400B9CE68252 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MYEntry+Sync";
+			productName = "MYEntry+Sync";
+			productReference = AB87F1C6171E480F0054FC8C /* MYEntry+Sync.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB87F1BE171E480F0054FC8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MY;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = JameMYG;
+			};
+			buildConfigurationList = AB87F1C1171E480F0054FC8C /* Build configuration list for PBXProject "MYEntry+Sync" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB87F1BD171E480F0054FC8C;
+			productRefGroup = AB87F1C7171E480F0054FC8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB87F1C5171E480F0054FC8C /* MYEntry+Sync */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB87F1C4171E480F0054FC8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB87F1D4171E480F0054FC8C /* InfoPlist.strings in Resources */,
+				AB87F1DC171E480F0054FC8C /* Default.png in Resources */,
+				AB87F1DE171E480F0054FC8C /* Default@2x.png in Resources */,
+				AB87F1E0171E480F0054FC8C /* Default-568h@2x.png in Resources */,
+				AB0FBCDA171E4CA700F81F3D /* MYEntry+Sync.broadcast in Resources */,
+				AB0FBCE0171E4F0B00F81F3D /* MYEntry+Sync.podspec in Resources */,
+				AB0FBCE1171E4F0B00F81F3D /* Podfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		380C94302E00400B9CE68252 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB87F1C2171E480F0054FC8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB87F1D6171E480F0054FC8C /* main.m in Sources */,
+				AB87F1DA171E480F0054FC8C /* MYAppDelegate.m in Sources */,
+				AB0FBCD9171E4CA700F81F3D /* MYEntrySqlAccessWithLog.m in Sources */,
+				AB0FBCDB171E4CA700F81F3D /* MYEntryInDbLog.m in Sources */,
+				AB0FBCDC171E4CA700F81F3D /* MYEntryWithSync.m in Sources */,
+				AB0FBCDD171E4CA700F81F3D /* MYEntrySyncUserDataBaseObserver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB87F1D2171E480F0054FC8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB87F1D3171E480F0054FC8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB87F1E1171E480F0054FC8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AB87F1E2171E480F0054FC8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB87F1E4171E480F0054FC8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3E52631DA7344A99BAD3374 /* Pods.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MYEntry+Sync/MYEntry+Sync-Prefix.pch";
+				INFOPLIST_FILE = "MYEntry+Sync/MYEntry+Sync-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AB87F1E5171E480F0054FC8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3E52631DA7344A99BAD3374 /* Pods.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MYEntry+Sync/MYEntry+Sync-Prefix.pch";
+				INFOPLIST_FILE = "MYEntry+Sync/MYEntry+Sync-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB87F1C1171E480F0054FC8C /* Build configuration list for PBXProject "MYEntry+Sync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB87F1E1171E480F0054FC8C /* Debug */,
+				AB87F1E2171E480F0054FC8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB87F1E3171E480F0054FC8C /* Build configuration list for PBXNativeTarget "MYEntry+Sync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB87F1E4171E480F0054FC8C /* Debug */,
+				AB87F1E5171E480F0054FC8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB87F1BE171E480F0054FC8C /* Project object */;
+}
