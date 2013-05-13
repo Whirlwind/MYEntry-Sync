@@ -21,7 +21,7 @@
             [sqls addObject:@"CREATE INDEX index_local_id_and_model_name_on_my_user_entry_logs on my_user_entry_logs (local_id, model_name);"];
             [sqls addObject:@"CREATE INDEX index_user_key_and_id_on_my_user_entry_logs on my_user_entry_logs (user_key, id);"];
         }
-        [accessor.dbQueue inDatabase:^(FMDatabase *db) {
+        [accessor.dbQueue inSavePoint:^(FMDatabase *db, BOOL *rollback) {
             for (NSString *sql in sqls) {
                 if (![db executeUpdate:sql]) {
                     LogError(@"ERROR! %@", db.lastErrorMessage);
