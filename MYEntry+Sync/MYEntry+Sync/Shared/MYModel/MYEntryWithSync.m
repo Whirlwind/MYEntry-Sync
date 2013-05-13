@@ -103,7 +103,7 @@
 }
 + (BOOL)saveInLocalWithJSONDictionary:(NSDictionary *)dic {
     __block BOOL status = YES;
-    [[self dbQueue] inTransaction:^(FMDatabase *db, BOOL *rollback) {
+    [[self dbQueue] inSavePoint:^(FMDatabase *db, BOOL *rollback) {
         status = [self saveInLocalWithJSONDictionary:dic usingDb:db];
         *rollback = !status;
     }];
@@ -111,7 +111,7 @@
 }
 + (BOOL)saveInLocalWithJSONArray:(NSArray *)array {
     __block BOOL status = YES;
-    [[self dbQueue] inTransaction:^(FMDatabase *db, BOOL *rollback) {
+    [[self dbQueue] inSavePoint:^(FMDatabase *db, BOOL *rollback) {
         [array enumerateObjectsUsingBlock:^(NSDictionary *obj, NSUInteger idx, BOOL *stop) {
             status = [self saveInLocalWithJSONDictionary:obj usingDb:db];
             *stop = *rollback = !status;
