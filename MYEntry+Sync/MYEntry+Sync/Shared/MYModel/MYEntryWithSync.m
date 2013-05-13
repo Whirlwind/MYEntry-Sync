@@ -82,7 +82,7 @@
     if (dic == nil || [dic isKindOfClass:[NSNull class]]) {
         return YES;
     }
-    MYEntryWithSync *entry = [[MYEntryWithSync alloc] init];
+    MYEntryWithSync *entry = [[self alloc] init];
     [dic enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
         if ([key isEqualToString:@"id"]) {
             key = @"remote_id";
