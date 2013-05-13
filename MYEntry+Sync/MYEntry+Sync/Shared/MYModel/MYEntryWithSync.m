@@ -59,11 +59,11 @@
 
 #pragma mark - select
 + (NSString *)selectFirstRemoteCreateDateInLocal {
-    return [[[[(MYEntrySqlAccess *)[self dataAccessor] select:@"remote_created_at", nil] where:@"remote_id IS NOT NULL", nil] orderBy:@"remote_created_at" ascending:YES] fetchString];
+    return [[[[(MYEntrySqlAccess *)[self dataAccessor] selectField:@"remote_created_at", nil] where:@"remote_id IS NOT NULL", nil] orderBy:@"remote_created_at" ascending:YES] fetchString];
 }
 
 + (NSString *)selectLatestRemoteUpdateDateInLocal {
-    return [[[[(MYEntrySqlAccess *)[self dataAccessor] select:@"remote_updated_at", nil] where:@"remote_id IS NOT NULL", nil] orderBy:@"remote_updated_at" ascending:NO] fetchString];
+    return [[[[(MYEntrySqlAccess *)[self dataAccessor] selectField:@"remote_updated_at", nil] where:@"remote_id IS NOT NULL", nil] orderBy:@"remote_updated_at" ascending:NO] fetchString];
 }
 
 #pragma mark destory
