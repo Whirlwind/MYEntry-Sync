@@ -13,7 +13,7 @@
 
 - (void)migrateUserDataBase:(NSNotification *)ntf {
     MYDbManager *accessor = [ntf.userInfo valueForKey:@"sqlAccess"];
-    [accessor migratePlugin:@"MYUserEntryLog" toVersion:1 update:^(NSInteger oldVersion, MYDbManager *accessor) {
+    [accessor migratePlugin:@"MYUserEntryLog" toVersion:1 update:^BOOL(NSInteger oldVersion, MYDbManager *accessor) {
         NSMutableArray *sqls = [[NSMutableArray alloc] initWithCapacity:0];
         if (oldVersion == 0) {
             // my_user_entry_logs
@@ -21,13 +21,17 @@
             [sqls addObject:@"CREATE INDEX index_local_id_and_model_name_on_my_user_entry_logs on my_user_entry_logs (local_id, model_name);"];
             [sqls addObject:@"CREATE INDEX index_user_key_and_id_on_my_user_entry_logs on my_user_entry_logs (user_key, id);"];
         }
+        __block BOOL success = YES;
         [accessor.dbQueue inSavePoint:^(FMDatabase *db, BOOL *rollback) {
             for (NSString *sql in sqls) {
                 if (![db executeUpdate:sql]) {
                     LogError(@"ERROR! %@", db.lastErrorMessage);
+                    *rollback = YES;
+                    success = NO;
                 }
             }
         }];
+        return success;
     }];
 }
 @end
