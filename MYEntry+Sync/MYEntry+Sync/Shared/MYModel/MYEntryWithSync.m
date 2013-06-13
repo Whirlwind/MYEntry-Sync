@@ -94,9 +94,7 @@
         NSString *property = [[self class] convertDbFieldNameToPropertyName:key];
         SEL setProperty = [self setterFromPropertyString:property];
         if ([entry respondsToSelector:setProperty]) {
-            MYPerformSelectorWithoutLeakWarningBegin
-            [entry performSelector:setProperty withObject:obj];
-            MYPerformSelectorWithoutLeakWarningEnd
+            [entry setValue:obj forKey:property];
         }
     }];
     return [entry save];
