@@ -71,6 +71,9 @@
     return [[[self dataAccessor] where:@"remote_id = ?", _id, nil] deleteDb];
 }
 + (BOOL)destoryInLocalWithRemoteIdArray:(NSArray *)ids {
+    if (ids == nil || [ids isKindOfClass:[NSNull class]] || [ids count] == 0) {
+        return YES;
+    }
     NSMutableArray *tmp = [NSMutableArray arrayWithCapacity:[ids count]];
     for (NSInteger i = 0; i < [ids count]; i++) {
         [tmp addObject:@"?"];
