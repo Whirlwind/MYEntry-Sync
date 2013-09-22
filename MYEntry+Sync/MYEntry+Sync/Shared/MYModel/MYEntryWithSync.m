@@ -80,6 +80,11 @@
     }
     return [[[self dataAccessor] where:[NSString stringWithFormat:@"remote_id in (%@)", [tmp componentsJoinedByString:@", "]] argsInArray:ids] deleteDb];
 }
+
++ (BOOL)clearInLocal {
+    return [[(MYEntrySqlAccess *)[self dataAccessor] class] clearEntries];
+}
+
 #pragma mark update
 + (BOOL)saveInLocalWithJSONDictionary:(NSDictionary *)dic usingDb:(FMDatabase *)db{
     if (dic == nil || [dic isKindOfClass:[NSNull class]]) {

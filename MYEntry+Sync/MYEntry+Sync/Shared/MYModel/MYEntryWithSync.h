@@ -28,6 +28,7 @@
 + (NSString *)selectLatestRemoteUpdateDateInLocal;
 
 + (BOOL)destoryInLocalWithRemoteIdArray:(NSArray *)ids;
++ (BOOL)clearInLocal;
 
 + (BOOL)saveInLocalWithJSONDictionary:(NSDictionary *)dic;
 + (BOOL)saveInLocalWithJSONArray:(NSArray *)array;
