@@ -82,7 +82,7 @@
 }
 
 + (BOOL)clearInLocal {
-    return [[(MYEntrySqlAccess *)[self dataAccessor] class] clearEntries];
+    return [(MYEntrySqlAccess *)[self dataAccessor] clearEntries];
 }
 
 #pragma mark update
