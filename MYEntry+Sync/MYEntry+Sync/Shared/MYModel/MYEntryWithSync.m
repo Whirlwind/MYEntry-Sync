@@ -101,10 +101,7 @@
             key = @"remote_created_at";
         }
         NSString *property = [[self class] convertDbFieldNameToPropertyName:key];
-        SEL setProperty = [self setterFromPropertyString:property];
-        if ([entry respondsToSelector:setProperty]) {
-            [entry setValue:obj forKey:property];
-        }
+        [entry setValue:obj forKey:property];
     }];
     return [entry save];
 }
