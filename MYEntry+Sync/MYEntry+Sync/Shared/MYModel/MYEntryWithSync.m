@@ -91,6 +91,7 @@
         return YES;
     }
     MYEntryWithSync *entry = [[self alloc] init];
+    [entry listenProperty];
     [dic enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
         if ([key isEqualToString:@"id"]) {
             key = @"remote_id";
